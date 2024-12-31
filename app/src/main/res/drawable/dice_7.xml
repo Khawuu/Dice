@@ -1,0 +1,35 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="500dp"
+    android:viewportWidth="1600"
+    android:viewportHeight="2000">
+
+    <!-- Triangle shape -->
+    <path
+        android:fillAlpha="0.5"
+        android:fillColor="#973BE3"
+        android:pathData="M800,400 L1400,1300 L200,1300 Z"
+        android:strokeAlpha="0.5" />
+
+    <!-- Triangle Below -->
+    <path
+        android:fillAlpha="0.5"
+        android:fillColor="#210257"
+        android:pathData="M800,1700 L1400,1300 L200,1300 Z"
+        android:strokeAlpha="0.5" />
+
+    <!-- Left Side Triangle -->
+    <path
+        android:fillAlpha="0.5"
+        android:fillColor="#581FA0"
+        android:pathData="M800,400 L200,690 L200,1300 Z"
+        />
+
+    <!-- Right Side Triangle -->
+    <path
+        android:fillAlpha="0.5"
+        android:fillColor="#581FA0"
+        android:pathData="M800,400 L1370,680 L1400,1300 Z"
+        />
+
+</vector>

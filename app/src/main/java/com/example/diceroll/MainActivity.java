@@ -51,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
             case 5:
                 drawableImg = R.drawable.dice_5;
                 break;
-            default:
+            case 6:
                 drawableImg = R.drawable.dice_6;
+            default:
+                drawableImg = R.drawable.dice_7;
         }
         diceImg.setImageResource(drawableImg);
 
