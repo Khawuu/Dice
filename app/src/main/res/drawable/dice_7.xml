@@ -6,30 +6,29 @@
 
     <!-- Triangle shape -->
     <path
-        android:fillAlpha="0.5"
+        android:fillAlpha="1"
         android:fillColor="#973BE3"
         android:pathData="M800,400 L1400,1300 L200,1300 Z"
         android:strokeAlpha="0.5" />
 
     <!-- Triangle Below -->
     <path
-        android:fillAlpha="0.5"
+        android:fillAlpha="1"
         android:fillColor="#210257"
         android:pathData="M800,1700 L1400,1300 L200,1300 Z"
         android:strokeAlpha="0.5" />
 
     <!-- Left Side Triangle -->
     <path
-        android:fillAlpha="0.5"
+        android:fillAlpha="1"
         android:fillColor="#581FA0"
         android:pathData="M800,400 L200,690 L200,1300 Z"
         />
 
     <!-- Right Side Triangle -->
     <path
-        android:fillAlpha="0.5"
+        android:fillAlpha="1"
         android:fillColor="#581FA0"
         android:pathData="M800,400 L1370,680 L1400,1300 Z"
         />
-
 </vector>

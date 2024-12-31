@@ -15,13 +15,16 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView diceImg;
     Button rollBtn;
+    TextView diceNumberTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         diceImg = findViewById(R.id.dice_img);
-        rollBtn = findViewById(R.id.roll_btn);
+        rollBtn = findViewById(R.id.rollBtn);
+        diceNumberTextView = findViewById(R.id.number);
 
         rollBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,33 +35,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void rollDice() {
-        int randomNum = new Random().nextInt(6) + 1;
-        int drawableImg;
+        int randomNum = new Random().nextInt(9) + 1;
 
-        switch (randomNum) {
-            case 1:
-                drawableImg = R.drawable.dice_1;
-                break;
-            case 2:
-                drawableImg = R.drawable.dice_2;
-                break;
-            case 3:
-                drawableImg = R.drawable.dice_3;
-                break;
-            case 4:
-                drawableImg = R.drawable.dice_4;
-                break;
-            case 5:
-                drawableImg = R.drawable.dice_5;
-                break;
-            case 6:
-                drawableImg = R.drawable.dice_6;
-            default:
-                drawableImg = R.drawable.dice_7;
-        }
-        diceImg.setImageResource(drawableImg);
+        diceNumberTextView.setText(String.valueOf(randomNum));
+
+        diceImg.setImageResource(R.drawable.dice_7);
 
         Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show();
-
     }
 }
